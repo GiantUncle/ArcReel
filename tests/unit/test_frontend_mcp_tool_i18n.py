@@ -1,4 +1,4 @@
-﻿"""Cross-check that every backend ArcReel MCP tool has a frontend display name and summary format.
+"""Cross-check that every backend ArcReel MCP tool has a frontend display name and summary format.
 
 The single source of truth is :data:`ARCREEL_MCP_TOOL_IDS` in
 ``server/agent_toolset/toolset.py``. The frontend renders each

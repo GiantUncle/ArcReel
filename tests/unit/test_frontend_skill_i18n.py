@@ -1,4 +1,4 @@
-﻿"""Cross-check that every user-invocable agent skill has a frontend display name.
+"""Cross-check that every user-invocable agent skill has a frontend display name.
 
 The single source of truth is the set of ``SKILL.md`` files under
 ``agent_runtime_profile/.claude/skills/`` whose YAML frontmatter declares

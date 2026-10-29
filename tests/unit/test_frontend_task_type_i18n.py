@@ -1,4 +1,4 @@
-﻿"""Cross-check that every backend task_type has a frontend display name.
+"""Cross-check that every backend task_type has a frontend display name.
 
 ``task_type`` has no centralized backend enum: it's a plain ``String`` column
 (``lib/db/models/task.py``) populated either by fixed literal call sites

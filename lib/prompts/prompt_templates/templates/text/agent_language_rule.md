@@ -9,7 +9,7 @@ invoked_by:
   name: agent_session
 applies_to: {}
 slots:
-  lang: 界面语言的语言名（中文 / English / Tiếng Việt）
+  lang: 界面语言的语言名（中文 / English / Tiếng Việt / 한국어）
 protected: false
 ---
 ## 语言规范

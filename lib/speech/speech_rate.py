@@ -24,9 +24,10 @@ from lib.infra.text_metrics import count_reading_units
 #: 未登记 / 缺失语言回退此值（与 ``count_reading_units`` 未知语言按 zh 计字的口径对齐）。
 DEFAULT_SPEECH_RATE_UPS: float = 5.0
 
-#: 按语言代码覆盖语速（阅读单位 / 秒），键用项目 ``source_language``（zh / en / vi）。
+#: 按语言代码覆盖语速（阅读单位 / 秒），键用项目 ``source_language``（zh / en / vi / ko）。
 #: en / vi 的阅读单位是「词」，正常口语约 2–3 词 / 秒，取 2.5；与 zh 的「字 / 秒」不可
-#: 直接通约，故必须分语言登记而非全局一个数值。值为可调估算，按实际配音节奏微调。
+#: 直接通约，故必须分语言登记而非全局一个数值。ko 的阅读单位同为「어절」（空格分词，
+#: 见 ``text_metrics``），口语语速与 en / vi 相当，先沿用 2.5，按实际配音节奏微调。值为可调估算，按实际配音节奏微调。
 SPEECH_RATE_UPS_BY_LANGUAGE: dict[str, float] = {
     "zh": 5.0,
     "en": 2.5,
