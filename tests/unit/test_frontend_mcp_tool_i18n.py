@@ -1,4 +1,4 @@
-"""Cross-check that every backend ArcReel MCP tool has a frontend display name and summary format.
+﻿"""Cross-check that every backend ArcReel MCP tool has a frontend display name and summary format.
 
 The single source of truth is :data:`ARCREEL_MCP_TOOL_IDS` in
 ``server/agent_toolset/toolset.py``. The frontend renders each
@@ -19,7 +19,7 @@ from server.agent_toolset.toolset import ARCREEL_MCP_TOOL_IDS
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DASHBOARD_TS = "frontend/src/i18n/{locale}/dashboard.ts"
-LOCALES = ("zh", "en", "vi")
+LOCALES = ("zh", "en", "vi", "ko")
 
 # Match either single- or double-quoted keys: 'tool_name_foo' or "tool_name_foo".
 _KEY_RE = re.compile(r"""['"](tool_name_[a-z0-9_]+)['"]\s*:""")

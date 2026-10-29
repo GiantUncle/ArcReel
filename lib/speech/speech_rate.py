@@ -31,6 +31,7 @@ SPEECH_RATE_UPS_BY_LANGUAGE: dict[str, float] = {
     "zh": 5.0,
     "en": 2.5,
     "vi": 2.5,
+    "ko": 2.5,
 }
 
 

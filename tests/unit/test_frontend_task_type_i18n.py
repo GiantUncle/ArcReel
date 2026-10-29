@@ -1,4 +1,4 @@
-"""Cross-check that every backend task_type has a frontend display name.
+﻿"""Cross-check that every backend task_type has a frontend display name.
 
 ``task_type`` has no centralized backend enum: it's a plain ``String`` column
 (``lib/db/models/task.py``) populated either by fixed literal call sites
@@ -37,7 +37,7 @@ from lib.project.asset_types import ASSET_SPECS
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 VOCAB_TS = "frontend/src/i18n/{locale}/{namespace}.ts"
-LOCALES = ("zh", "en", "vi")
+LOCALES = ("zh", "en", "vi", "ko")
 
 TEXT_TASK_TYPES = frozenset(
     {

@@ -28,7 +28,7 @@ _LATIN_WORD_PATTERN = re.compile(r"\b\w+\b", re.UNICODE)
 
 def _pattern_for(language: str | None) -> re.Pattern[str]:
     code = (language or "").strip().lower()
-    if code in ("en", "vi"):
+    if code in ("en", "vi", "ko"):
         return _LATIN_WORD_PATTERN
     return _ZH_UNIT_PATTERN
 

@@ -21,6 +21,14 @@ from .vi import providers as vi_providers
 from .vi import system as vi_system
 from .vi import templates as vi_templates
 from .vi import validation as vi_validation
+from .ko import assets as ko_assets
+from .ko import emails as ko_emails
+from .ko import errors as ko_errors
+from .ko import events as ko_events
+from .ko import providers as ko_providers
+from .ko import system as ko_system
+from .ko import templates as ko_templates
+from .ko import validation as ko_validation
 from .zh import assets as zh_assets
 from .zh import emails as zh_emails
 from .zh import errors as zh_errors
@@ -34,13 +42,14 @@ logger = logging.getLogger(__name__)
 
 # Default locale
 DEFAULT_LOCALE = "zh"
-SUPPORTED_LOCALES = ["zh", "en", "vi"]
+SUPPORTED_LOCALES = ["zh", "en", "vi", "ko"]
 
 # Mapping from locale code to human-readable language name
 LOCALE_LANGUAGE_MAP: dict[str, str] = {
     "zh": "中文",
     "en": "English",
     "vi": "Tiếng Việt",
+    "ko": "한국어",
 }
 
 # Merged message dictionary
@@ -74,6 +83,16 @@ MESSAGES: dict[str, dict[str, str]] = {
         **vi_templates.MESSAGES,
         **vi_assets.MESSAGES,
         **vi_validation.MESSAGES,
+    },
+    "ko": {
+        **ko_errors.MESSAGES,
+        **ko_events.MESSAGES,
+        **ko_system.MESSAGES,
+        **ko_emails.MESSAGES,
+        **ko_providers.MESSAGES,
+        **ko_templates.MESSAGES,
+        **ko_assets.MESSAGES,
+        **ko_validation.MESSAGES,
     },
 }
 
